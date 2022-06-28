@@ -41,11 +41,16 @@ nav{
             font-weight: 400;
             margin: auto 0.4rem;
             padding: auto 0.4rem;
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 50% 100%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.4s;
         }
-        nav ul li a:hover{
-            color:hsl(56, 100%, 65%);
-            font-weight: 400;
-        }
+            nav ul li a:hover{
+                color:hsl(56, 100%, 65%);
+                background-size: 90% 2px;            
+            }
 footer{
     color: hsl(148, 100%, 93%);
     margin: 10rem auto 0rem auto;
@@ -166,7 +171,9 @@ header{
     margin: 7rem 10rem;
     padding: 3rem 5rem;
 }
-
+.button:hover{
+    cursor: pointer;
+}
     /*UBICATION*/
 .textCenter{
     text-align: center;
@@ -200,7 +207,7 @@ header{
     flex-grow: 2;
 }
 .justifyContent{ 
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .block{
     display: block;
